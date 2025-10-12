@@ -15,8 +15,8 @@ def comma_death(old_file:str):
 
 def parse_local_csv():
     for file in os.listdir('./csv'):
-        open("./csv/temp.csv", 'x')
-        comma_death(file)
+        # open("./csv/temp.csv", 'x')
+        # comma_death(file)
         with open(f"csv/{file}", 'r') as f:
             next(f)
             if file.replace("nw.", "nw_").replace(".csv", "") == 'nw_data.1.AllData':

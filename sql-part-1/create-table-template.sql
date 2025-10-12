@@ -31,7 +31,7 @@ CREATE TABLE nw_ownership(
 );
 
 CREATE TABLE nw_starea(  
-    state_code VARCHAR(2) PRIMARY KEY,
+    state_code VARCHAR(2),
     area_code VARCHAR(5),
     area_text VARCHAR(64),
     display_level SMALLINT,
@@ -62,3 +62,32 @@ CREATE TABLE nw_estimate_id(
     selectable CHAR,
     sort_sequence SMALLINT
 );
+
+CREATE TABLE nw_series(  
+    series_id VARCHAR(30),
+    seasonality CHAR,
+    state_code VARCHAR(2),
+    area_code VARCHAR(5),
+    ownership_code CHAR,
+    estimate_id_code CHAR(2),
+    industry_code VARCHAR(6),
+    soc_code VARCHAR(6),
+    subcell_id_code CHAR(2),
+    datatype_id_code CHAR(2),
+    level_code CHAR(2),
+    footnote_codes VARCHAR(10),
+    begin_year CHAR(4),
+    begin_period CHAR(3),
+    end_year CHAR(4),
+    end_period CHAR(3)
+);
+
+CREATE TABLE nw_all_data(  
+    series_id VARCHAR(30),
+    "year" CHAR(4),
+    "period" CHAR(3),
+    "value" DECIMAL
+);
+
+ALTER TABLE nw_series
+DROP COLUMN footnote_codes
