@@ -1,1 +1,1 @@
-## Really Cool and Awesome SQL Code for our Projects Class.
+## Really cool and awesome repo for our persistence projects class.
