@@ -91,3 +91,11 @@ CREATE TABLE nw_all_data(
 
 ALTER TABLE nw_series
 DROP COLUMN footnote_codes
+
+DO $$ DECLARE
+    r RECORD;
+BEGIN
+    -- Disable constraints
+    EXECUTE 'DROP SCHEMA public CASCADE';
+    EXECUTE 'CREATE SCHEMA public';
+END $$;
