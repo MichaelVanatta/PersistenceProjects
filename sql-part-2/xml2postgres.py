@@ -1,20 +1,16 @@
 import xml.etree.ElementTree as ET
 import psycopg2
 
-tree = ET.parse('your_data.xml')
+tree = ET.parse("customers/customers.xml")
 root = tree.getroot()
 
-conn = psycopg2.connect("dbname_db=postgres user=postgres password=ZanderHarden")
+conn = psycopg2.connect(
+    host="localhost", 
+    database="postgres", 
+    user="postgres", 
+    password=""
+)
 cur = conn.cursor()
-
-cur.execute("""
-            CREATE TABLE IF EXISTS Customer(
-                CustomerId PRIMARY KEY,
-                Name VARCHAR(30),
-                Email VARCHAR(30),
-                Age SMALLINT
-            );
-            """)
 
 for item in root.findall('Customer'):
     customerId = item.find('CustomerId').text
