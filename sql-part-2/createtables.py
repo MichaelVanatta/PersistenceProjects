@@ -4,7 +4,7 @@ conn = psycopg2.connect(
     host="localhost", 
     database="postgres", 
     user="postgres", 
-    password="PP"
+    password="ZanderHarden"
 )
 cur = conn.cursor()
 
@@ -13,7 +13,7 @@ cur.execute("""
                 CustomerId VARCHAR(7) PRIMARY KEY,
                 Name VARCHAR(30),
                 Email VARCHAR(30),
-                Age SMALLINT
+                Age VARCHAR(3)
             );
             """)
 
