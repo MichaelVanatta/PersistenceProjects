@@ -4,12 +4,12 @@ conn = psycopg2.connect(
     host="localhost", 
     database="postgres", 
     user="postgres", 
-    password="ZanderHarden"
+    password="PP"
 )
 cur = conn.cursor()
 
 cur.execute("""
-            CREATE TABLE IF NOT EXISTS Customer(
+            CREATE TABLE IF NOT EXISTS Customers(
                 CustomerId VARCHAR(7) PRIMARY KEY,
                 Name VARCHAR(30),
                 Email VARCHAR(30),
@@ -20,7 +20,7 @@ cur.execute("""
 cur.execute("""
             CREATE TABLE IF NOT EXISTS Orders(
                 OrderId VARCHAR(7) PRIMARY KEY,
-                CustomerId VARCHAR(7) REFERENCES Customer(CustomerId),
+                CustomerId VARCHAR(7) REFERENCES Customers(CustomerId),
                 Total INT
             );
             """)
