@@ -5,6 +5,8 @@ from psycopg2.extras import execute_batch
 tree = ET.parse("customers/customers.xml")
 root = tree.getroot()
 
+counter = 0
+
 conn = psycopg2.connect(
     host="localhost", 
     database="postgres", 
@@ -46,7 +48,6 @@ for event, elem in context:
         email = elem.findtext("Email")
         age = elem.findtext("Age")
         customer_batch.append((customer_id, name, email, age))
-        print("Bum Bitty")
 
         orders = elem.find("Orders")
         if orders is not None:
@@ -54,7 +55,6 @@ for event, elem in context:
                 order_id = order.findtext("OrderId")
                 total = order.findtext("Total")
                 order_batch.append((order_id, customer_id, total))
-                print("Bitty Bitty")
 
                 orderlines = order.find("Lines")
                 if orderlines is not None:
@@ -65,7 +65,6 @@ for event, elem in context:
                         qty = ol.findtext("Qty")
                         orderline_total = ol.findtext("Total")
                         orderline_batch.append((orderline_id, order_id, qty, price, orderline_total, product_id,))
-                        print("Bum Bum")
 
         if len(customer_batch) >= BATCH_SIZE:
             execute_batch(cur, insert_customer, customer_batch)
@@ -75,7 +74,8 @@ for event, elem in context:
             customer_batch.clear()
             order_batch.clear()
             orderline_batch.clear()
-            print("Bum Bitty Bitty Bitty Bum")
+            counter += 1
+            print(counter)
 
         root.clear()
 
@@ -84,7 +84,9 @@ if customer_batch:
     execute_batch(cur, insert_order, order_batch)
     execute_batch(cur, insert_orderline, orderline_batch)
     conn.commit()
-    print("The Final BUM")
+    counter += 1
+    print(counter)
 
+print("Finished")
 cur.close()
 conn.close()

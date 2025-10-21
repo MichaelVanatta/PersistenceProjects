@@ -19,3 +19,11 @@ CREATE TABLE IF NOT EXISTS OrderLines(
     LineTotal INT,
     ProductId VARCHAR(4)
 );
+
+DO $$ DECLARE
+    r RECORD;
+BEGIN
+    -- Disable constraints
+    EXECUTE 'DROP SCHEMA public CASCADE';
+    EXECUTE 'CREATE SCHEMA public';
+END $$;
