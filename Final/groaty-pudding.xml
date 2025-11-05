@@ -1,0 +1,107 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.45.0-wmf.24</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="126" case="first-letter">MOS</namespace>
+      <namespace key="127" case="first-letter">MOS talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="1728" case="first-letter">Event</namespace>
+      <namespace key="1729" case="first-letter">Event talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Groaty pudding</title>
+    <ns>0</ns>
+    <id>8017525</id>
+    <revision>
+      <id>1286772334</id>
+      <parentid>1285164773</parentid>
+      <timestamp>2025-04-21T21:57:13Z</timestamp>
+      <contributor>
+        <username>BlanchMik</username>
+        <id>15780210</id>
+      </contributor>
+      <minor/>
+      <origin>1286772334</origin>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="2173" sha1="30xzan2p654ea7gdf8k5uvhc7hp38py" xml:space="preserve">{{Short description|Traditional English food}}
+{{Use dmy dates|date=April 2022}}
+{{Infobox food
+| name             = Groaty pudding
+| image            = 
+| caption          = 
+| alternate_name   = Groaty Dick
+| place_of_origin  = [[United Kingdom]]
+| region           = [[Black Country]]
+| creator          = 
+| type             = [[Pudding]]
+| served           = 
+| main_ingredient  = [[Groats]], beef, [[leek]]s, [[onion]], and beef [[Stock (food)|stock]]
+| variations       = 
+| calories         = 
+| other            = 
+}}
+'''Groaty pudding''' (also known as '''groaty dick'''&lt;ref&gt;{{cite web|url=https://www.bbc.co.uk/news/uk-england-40923610|title=Faggots and groaty dick: Why some foods travel and others don't|publisher=BBC News|date=2 September 2018|access-date=2 September 2018}}&lt;/ref&gt;) is a traditional dish from the [[Black Country]] in England. It is made from soaked [[groats]], beef, [[leek]]s, onion, and [[Stock (food)|beef stock]] which are baked together at a moderate temperature of approximately {{convert|150|°C|°F}} for up to 16 hours. In the Black Country it is traditional to eat groaty pudding on [[Guy Fawkes Night]].&lt;ref&gt;[https://www.foodsofengland.info/groatydick.html Foods of England - Groaty Dick]&lt;/ref&gt;
+
+It is mentioned as a local staple by [[Samuel Jackson Pratt]] in 1805.&lt;ref name="Jackson)1805"&gt;{{cite book|author=Mr. Pratt (Samuel Jackson)|title=Harvest-home: consisting of Supplementary gleanings, original dramas and poems, contributions of literary friends, and select re-publications, including Sympathy, a poem, revised, corrected and enlarged, from the eighth edition|url=https://books.google.com/books?id=LdNUAAAAYAAJ&amp;pg=PA276|year=1805|publisher=R. Phillips|pages=276–}}&lt;/ref&gt;
+
+==See also==
+{{Portal|Food}}
+*[[Haggis]]
+*[[Meatloaf]]
+*[[Nut roast]]
+*[[Red pudding]]
+*[[Scrapple]]
+*[[White pudding]]
+
+==References==
+{{reflist}}
+
+{{Puddings}}
+
+{{DEFAULTSORT:Groaty Pudding}}
+[[Category:British puddings]]
+[[Category:English beef dishes]]
+[[Category:Holiday foods]]
+[[Category:Victorian cuisine]]
+[[Category:Black Country]]
+[[Category:Savory puddings]]
+[[Category:Meat and grain sausages]]
+
+
+{{UK-cuisine-stub}}
+{{sausage-stub}}</text>
+      <sha1>30xzan2p654ea7gdf8k5uvhc7hp38py</sha1>
+    </revision>
+  </page>
+</mediawiki>
